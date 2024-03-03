@@ -1,0 +1,119 @@
+/* components/Profile.css */
+
+/* Set background color for the body */
+body {
+    background-color: #fff; /* Set your desired background color */
+}
+
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Apply Poppins font to body */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(33, 21, 5);
+}
+
+/* Profile section */
+#profile {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+    padding: 50px;
+}
+
+/* Profile image */
+.section__pic-container img {
+    width: 280px; /* Adjust image size for smaller screens */
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5px; /* Add space between image and text on smaller screens */
+    /* Add animation */
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+/* Text container */
+.section__text {
+    text-align: center; /* Center align text */
+}
+
+/* Title */
+.title {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* Add animation */
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+}
+
+/* Text paragraphs */
+.section__text__p1{
+    font-size: 1.0rem; /* Decrease font size for smaller screens */
+}
+
+/* Button container */
+.btn-container {
+    margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    /* Add animation */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: #2b1313;
+    color: #fff;
+}
+
+/* Social icons */
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effect for icons */
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    #profile {
+        padding: 20px; /* Decrease padding */
+    }
+}

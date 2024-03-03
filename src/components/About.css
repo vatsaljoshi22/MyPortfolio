@@ -1,0 +1,78 @@
+/* About.css */
+
+/* Section container */
+#about {
+    padding: 50px;
+    background-color: #f8f9fa; /* Light background color */
+    text-align: center; /* Center align text */
+  }
+  
+  /* Title */
+  .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #343a40; /* Dark text color */
+  }
+  
+  /* About details container */
+  .about-details-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+  }
+  
+  /* Details container */
+  .details-container {
+    margin-top: 20px; /* Add margin to separate from title */
+    border: 2px solid #ced4da; /* Add border */
+    border-radius: 60px; /* Add border radius for rounded corners */
+    padding: 20px; /* Add padding */
+    max-width: 600px; /* Limit max width */
+  }
+  
+  /* Text container */
+  .text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px; /* Add margin between text containers */
+  }
+  
+  /* Icon */
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+  }
+  
+  /* Additional styling for paragraphs */
+  p {
+    color: #6c757d; /* Text color */
+    font-size: 1.1rem;
+    line-height: 1.6; /* Spacing between lines */
+  }
+  
+  /* Additional styling for headings */
+  h3 {
+    color: #060e16; /* Dark text color */
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* Hover effect for icons */
+  .icon:hover {
+    transform: scale(1.1); /* Scale up the icon on hover */
+  }
+  
+  /* Arrow icon */
+  .arrow {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Hover effect for arrow icon */
+  .arrow:hover {
+    transform: rotate(90deg); /* Rotate the arrow icon on hover */
+  }
+  
